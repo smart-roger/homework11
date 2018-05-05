@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.9)
-project(async VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+#project(async VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project(async VERSION 0.0)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -22,6 +23,8 @@ add_library(async SHARED
 add_executable(async_cli main.cpp)
 
 target_link_libraries(async_cli async)
+
+set_target_properties(async PROPERTIES PUBLIC_HEADER async.h)
 
 set(CPACK_GENERATOR DEB)
 
