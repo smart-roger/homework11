@@ -36,6 +36,6 @@ set(CPACK_PACKAGE_CONTACT __shurik@list.ru)
 
 install (TARGETS async 
     LIBRARY DESTINATION lib
-    PUBLIC_HEADER DESTINATION include
+    PUBLIC_HEADER DESTINATION include)
 
 include(CPack)
