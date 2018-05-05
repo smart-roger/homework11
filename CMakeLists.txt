@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.9)
-#project(async VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
-project(async VERSION 0.0)
+project(async VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+#project(async VERSION 0.0)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -33,5 +33,7 @@ set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
 set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
 
 set(CPACK_PACKAGE_CONTACT __shurik@list.ru)
+
+install (Targets)
 
 include(CPack)
