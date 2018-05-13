@@ -38,4 +38,6 @@ install (TARGETS async
     LIBRARY DESTINATION lib
     PUBLIC_HEADER DESTINATION include)
 
+install (FILE async.h DESTINATION include)
+
 include(CPack)
